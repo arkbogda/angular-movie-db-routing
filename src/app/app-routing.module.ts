@@ -5,14 +5,16 @@ import {PageNotFoundComponent} from "./pages/page-not-found/page-not-found.compo
 import {CategoriesComponent} from "./pages/categories/categories.component";
 import {MovieDetailsComponent} from "./pages/movies/movie-details/movie-details.component";
 import {MoviesInCategoryComponent} from "./pages/categories/movies-in-category/movies-in-category.component";
+import {AddMovieComponent} from "./pages/add-movie/add-movie.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: '/movies', pathMatch: 'full'},
-  {path: 'movies', component: MoviesComponent},
-  {path: 'movie/:id', component: MovieDetailsComponent},
-  {path: 'categories', component: CategoriesComponent},
-  {path: 'category/:category', component: MoviesInCategoryComponent},
-  {path: '**', component: PageNotFoundComponent}
+  { path: '', redirectTo: '/movies', pathMatch: 'full'},
+  { path: 'movies', component: MoviesComponent},
+  { path: 'movie/:id', component: MovieDetailsComponent},
+  { path: 'categories', component: CategoriesComponent},
+  { path: 'category/:category', component: MoviesInCategoryComponent},
+  { path: 'add-movie', component: AddMovieComponent },
+  { path: '**', component: PageNotFoundComponent}
 ]
 
 @NgModule(

@@ -11,6 +11,8 @@ import { MoviesComponent } from './pages/movies/movies.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { MoviesInCategoryComponent } from './pages/categories/movies-in-category/movies-in-category.component';
 import {AppRoutingModule} from "./app-routing.module";
+import {AddMovieComponent} from './pages/add-movie/add-movie.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -21,8 +23,9 @@ import {AppRoutingModule} from "./app-routing.module";
     PageNotFoundComponent,
     MoviesInCategoryComponent,
     MovieCoverComponent,
+    AddMovieComponent,
   ],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
